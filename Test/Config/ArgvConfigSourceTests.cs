@@ -1,6 +1,8 @@
 #region Copyright
 //
-// Nini Configuration Project.
+// NiniNG Configuration Project.
+//
+// Copyright (C) 2014 Nicholas Omann.  All rights reserved.
 // Copyright (C) 2006 Brent R. Matzelle.  All rights reserved.
 //
 // This software is published under the terms of the MIT X11 license, a copy of 
@@ -13,15 +15,15 @@ using System.IO;
 using System.Xml;
 using System.Text;
 using Nini.Config;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Nini.Test.Config
 {
-	[TestFixture]
+	[TestClass]
 	public class ArgvConfigSourceTests
 	{
 		#region Tests
-		[Test]
+		[TestMethod]
 		public void AddSwitch ()
 		{
 			string[] arguments = new string[] { "--help", "-d", "doc.xml", 
@@ -44,7 +46,7 @@ namespace Nini.Test.Config
 			Assert.AreEqual ("cat", config.Get ("pet"));
 		}
 		
-		[Test]
+		[TestMethod]
 		public void AddSwitchCase ()
 		{
 			string[] arguments = new string[] { "-H" };
@@ -59,7 +61,7 @@ namespace Nini.Test.Config
 			Assert.IsNotNull (config.Get ("heat"));
 		}
 		
-		[Test]
+		[TestMethod]
 		public void GetArguments ()
 		{
 			string[] arguments = new string[] { "--help", "-d", "doc.xml", 
@@ -79,7 +81,7 @@ namespace Nini.Test.Config
 			Assert.AreEqual ("/pet:cat", args[3]);
 		}
 
-		[Test] 
+		[TestMethod] 
 		public void GetStringWithColon() 
 		{ 
 			string[] arguments = new string[] {"-c", "\"D:\\test directory\""}; 

@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nini", "Nini.csproj", "{9B920C90-08EF-4123-A6B7-5F25CF0F94EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiniNG", "NiniNG.csproj", "{9B920C90-08EF-4123-A6B7-5F25CF0F94EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiniTest", "Test\NiniTest.csproj", "{BF80879B-3F0D-44A8-87FF-00143FDD3D16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiniNGTest", "NiniNGTest\NiniNGTest.csproj", "{A6533346-72A4-49C2-8C94-47C53BE4A0AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +16,10 @@ Global
 		{9B920C90-08EF-4123-A6B7-5F25CF0F94EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B920C90-08EF-4123-A6B7-5F25CF0F94EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B920C90-08EF-4123-A6B7-5F25CF0F94EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF80879B-3F0D-44A8-87FF-00143FDD3D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF80879B-3F0D-44A8-87FF-00143FDD3D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF80879B-3F0D-44A8-87FF-00143FDD3D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF80879B-3F0D-44A8-87FF-00143FDD3D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6533346-72A4-49C2-8C94-47C53BE4A0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6533346-72A4-49C2-8C94-47C53BE4A0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6533346-72A4-49C2-8C94-47C53BE4A0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6533346-72A4-49C2-8C94-47C53BE4A0AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

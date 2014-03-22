@@ -1,6 +1,8 @@
 #region Copyright
 //
 // Nini Configuration Project.
+//
+// Copyright (C) 2014 Nicholas Omann.  All rights reserved.
 // Copyright (C) 2006 Brent R. Matzelle.  All rights reserved.
 //
 // This software is published under the terms of the MIT X11 license, a copy of 
@@ -11,14 +13,14 @@
 using System;
 using System.IO;
 using Nini.Config;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Nini.Test.Config
 {
-	[TestFixture]
+	[TestClass]
 	public class AliasTextTests
 	{
-		[Test]
+		[TestMethod]
 		public void GetBoolean ()
 		{
 			AliasText alias = new AliasText ();
@@ -35,7 +37,7 @@ namespace Nini.Test.Config
 			Assert.IsFalse (alias.GetBoolean ("OfF"));
 		}
 
-		[Test]
+        [TestMethod]
 		public void GetDefaultAliases ()
 		{
 			AliasText alias = new AliasText ();
@@ -46,8 +48,8 @@ namespace Nini.Test.Config
 			Assert.IsTrue (alias.GetBoolean ("tRUe"));
 			Assert.IsFalse (alias.GetBoolean ("FaLse"));
 		}
-		
-		[Test]
+
+        [TestMethod]
 		[ExpectedException (typeof (ArgumentException))]
 		public void NonExistantBooleanText ()
 		{
@@ -57,8 +59,8 @@ namespace Nini.Test.Config
 			
 			Assert.IsTrue (alias.GetBoolean ("Not present"));
 		}
-		
-		[Test]
+
+        [TestMethod]
 		public void GetInt ()
 		{
 			AliasText alias = new AliasText ();
@@ -74,8 +76,8 @@ namespace Nini.Test.Config
 			Assert.AreEqual (100, alias.GetInt ("error code", "warn"));
 			Assert.AreEqual (200, alias.GetInt ("error code", "ErroR"));
 		}
-		
-		[Test]
+
+        [TestMethod]
 		[ExpectedException (typeof (ArgumentException))]
 		public void GetIntNonExistantText ()
 		{
@@ -84,8 +86,8 @@ namespace Nini.Test.Config
 			
 			Assert.AreEqual (100, alias.GetInt ("error code", "not here"));
 		}
-		
-		[Test]
+
+        [TestMethod]
 		[ExpectedException (typeof (ArgumentException))]
 		public void GetIntNonExistantKey ()
 		{
@@ -94,8 +96,8 @@ namespace Nini.Test.Config
 			
 			Assert.AreEqual (100, alias.GetInt ("not exist", "warn"));
 		}
-		
-		[Test]
+
+        [TestMethod]
 		public void GetIntEnum ()
 		{
 			AliasText alias = new AliasText ();
@@ -114,8 +116,8 @@ namespace Nini.Test.Config
 			{
 			}
 		}
-		
-		[Test]
+
+        [TestMethod]
 		public void GlobalAlias ()
 		{
 			StringWriter writer = new StringWriter ();
