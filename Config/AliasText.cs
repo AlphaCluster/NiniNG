@@ -1,6 +1,8 @@
 #region Copyright
 //
 // Nini Configuration Project.
+//
+// Copyright (C) 2014 Nicholas Omann
 // Copyright (C) 2006 Brent R. Matzelle.  All rights reserved.
 //
 // This software is published under the terms of the MIT X11 license, a copy of 
@@ -140,8 +142,7 @@ namespace Nini.Config
 		/// </summary>
 		private Hashtable InsensitiveHashtable ()
 		{
-			return new Hashtable (CaseInsensitiveHashCodeProvider.Default, 
-								  CaseInsensitiveComparer.Default);
+            return System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable();
 		}
 		#endregion
 	}

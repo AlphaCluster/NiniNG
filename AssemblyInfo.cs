@@ -1,6 +1,8 @@
 #region Copyright
 //
-// Nini Configuration Project.
+// NiniNG Configuration Project.
+//
+// Copyright (C) 2014 Nicholas Omann
 // Copyright (C) 2006 Brent R. Matzelle.  All rights reserved.
 //
 // This software is published under the terms of the MIT X11 license, a copy of 
@@ -14,27 +16,15 @@ using System.Security.Permissions;
 using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
 
-#if (NET_1_0)
-[assembly: AssemblyTitle("Nini for .NET Framework 1.0")]
-#elif (NET_1_1)
-[assembly: AssemblyTitle("Nini for .NET Framework 1.1")]
-#elif (NET_2_0)
-[assembly: AssemblyTitle("Nini for .NET Framework 2.0")]
-#elif (MONO_1_1)
-[assembly: AssemblyTitle("Nini for Mono 1.1")]
-#elif (NET_COMPACT_1_0)
-[assembly: AssemblyTitle("Nini for .NET Compact Framework 1.0")]
-#else
-[assembly: AssemblyTitle("Nini")]
-#endif
+[assembly: AssemblyTitle("NiniNG")]
 
-[assembly: AssemblyDescription(".NET Configuration Library - http://nini.sourceforge.net/")]
+[assembly: AssemblyDescription(".NET NextGen Configuration Library - https://github.com/AlphaCluster/NiniNG")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Brent R. Matzelle")]
-[assembly: AssemblyProduct("Nini")]
-[assembly: AssemblyCopyright("Copyright (c) 2006 Brent R. Matzelle. All Rights Reserved.")]
-[assembly: AssemblyTrademark("Copyright (c) 2006 Brent R. Matzelle. All Rights Reserved.")]
-[assembly: AssemblyDefaultAlias("Nini")]
+[assembly: AssemblyCompany("Nicholas Omann")]
+[assembly: AssemblyProduct("NiniNG")]
+[assembly: AssemblyCopyright("Copyright (c) 2014 Nicholas Omann")]
+[assembly: AssemblyTrademark("Copyright (c) 2014 Nicholas Omann")]
+[assembly: AssemblyDefaultAlias("NiniNG")]
 [assembly: AssemblyCulture("")]
 
 #if STRONG
@@ -42,7 +32,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyKeyFile(@"..\..\Nini.key")]
 #endif
 
-[assembly: System.Reflection.AssemblyVersion("1.1.0.0")]
+[assembly: System.Reflection.AssemblyVersion("1.0.0.0")]
 
 [assembly:CLSCompliant(true)] // Required for CLS compliance
 
